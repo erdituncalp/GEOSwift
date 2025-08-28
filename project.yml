@@ -24,6 +24,7 @@ targets:
       CODE_SIGNING_REQUIRED: false
       CODE_SIGN_IDENTITY: ""
       SUPPORTS_MACCATALYST: true
+      DEBUG_INFORMATION_FORMAT: "dwarf"
 
   GEOSwiftTests:
     type: bundle.unit-test

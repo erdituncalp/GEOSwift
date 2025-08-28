@@ -517,7 +517,7 @@
 			mainGroup = 4650E838DE81B888614C9DDB;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C1958B36F2CE190ADC38C82A /* XCRemoteSwiftPackageReference "geos" */,
+				88781CD242A9AE562CF5A20F /* XCRemoteSwiftPackageReference "geos" */,
 			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
@@ -828,6 +828,7 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -855,6 +856,7 @@
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -908,12 +910,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C1958B36F2CE190ADC38C82A /* XCRemoteSwiftPackageReference "geos" */ = {
+		88781CD242A9AE562CF5A20F /* XCRemoteSwiftPackageReference "geos" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/GEOSwift/geos.git";
+			repositoryURL = "https://github.com/erdituncalp/geos.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -921,7 +923,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		36CE224DD3CA4E9421683E73 /* geos */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C1958B36F2CE190ADC38C82A /* XCRemoteSwiftPackageReference "geos" */;
+			package = 88781CD242A9AE562CF5A20F /* XCRemoteSwiftPackageReference "geos" */;
 			productName = geos;
 		};
 /* End XCSwiftPackageProductDependency section */
