@@ -1,0 +1,70 @@
+name: GEOSwift
+options:
+  bundleIdPrefix: com.geoswift
+  deploymentTarget:
+    iOS: "12.0"
+    macOS: "10.14"
+    tvOS: "12.0"
+    watchOS: "5.0"
+
+targets:
+  GEOSwift_iOS:
+    type: framework
+    platform: iOS
+    sources:
+      - Sources/GEOSwift
+    dependencies:
+      - package: geos
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.geoswift.GEOSwift
+      MARKETING_VERSION: 11.2.0
+      CURRENT_PROJECT_VERSION: 1
+      BUILD_LIBRARY_FOR_DISTRIBUTION: true
+
+  GEOSwift_macOS:
+    type: framework
+    platform: macOS
+    sources:
+      - Sources/GEOSwift
+    dependencies:
+      - package: geos
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.geoswift.GEOSwift
+      MARKETING_VERSION: 11.2.0
+      CURRENT_PROJECT_VERSION: 1
+      SUPPORTS_MACCATALYST: true
+      BUILD_LIBRARY_FOR_DISTRIBUTION: true
+
+  GEOSwiftTests_iOS:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/GEOSwiftTests
+    dependencies:
+      - target: GEOSwift_iOS
+
+  GEOSwiftTests_macOS:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/GEOSwiftTests
+    dependencies:
+      - target: GEOSwift_macOS
+
+packages:
+  geos:
+    url: https://github.com/GEOSwift/geos.git
+    from: 9.0.0
+
+schemes:
+  GEOSwift:
+    build:
+      targets:
+        GEOSwift_iOS: [build]
+        GEOSwift_macOS: [build]
+    test:
+      targets:
+        - name: GEOSwiftTests_iOS
+          parallelizable: true
+        - name: GEOSwiftTests_macOS
+          parallelizable: true
