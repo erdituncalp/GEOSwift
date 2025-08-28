@@ -35,8 +35,8 @@ targets:
 
 packages:
   geos:
-    url: https://github.com/GEOSwift/geos.git
-    from: 9.0.0
+    url: https://github.com/erdituncalp/geos.git
+    branch: main
 
 schemes:
   GEOSwift:
