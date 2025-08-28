@@ -23,6 +23,7 @@ targets:
       CODE_SIGN_IDENTITY: ""
       SUPPORTS_MACCATALYST: true
       DEBUG_INFORMATION_FORMAT: "dwarf"
+      FRAMEWORK_SEARCH_PATHS: ["$(inherited)", "$(SRCROOT)/../Carthage/Build"]
 
   GEOSwiftTests:
     type: bundle.unit-test
