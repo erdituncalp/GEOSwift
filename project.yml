@@ -13,8 +13,6 @@ targets:
     platform: iOS
     sources:
       - Sources/GEOSwift
-    dependencies:
-      - package: geos
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.geoswift.GEOSwift
       MARKETING_VERSION: 11.2.0
@@ -33,11 +31,6 @@ targets:
       - Tests/GEOSwiftTests
     dependencies:
       - target: GEOSwift
-
-packages:
-  geos:
-    url: https://github.com/erdituncalp/geos.git
-    branch: main
 
 schemes:
   GEOSwift:

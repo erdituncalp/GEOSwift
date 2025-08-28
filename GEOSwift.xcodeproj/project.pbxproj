@@ -41,7 +41,6 @@
 		46C9EF9EA717773EA077A353 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D851D55CBDF69879976F9 /* Feature.swift */; };
 		51A60AC4C9AE5CDDD4CD43C1 /* MultiPolygon+GEOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6BC6D6A7A252CF15EC6E1 /* MultiPolygon+GEOSTests.swift */; };
 		5396613F781EA98C43805194 /* GEOSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E452E265FA37A0DAD4F21C /* GEOSwift.framework */; };
-		5428D1B1309205C451665B43 /* geos in Frameworks */ = {isa = PBXBuildFile; productRef = 36CE224DD3CA4E9421683E73 /* geos */; };
 		57757443085E85DC43B5C7EA /* PreparedGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753C3FAC0260BA3C5598B33 /* PreparedGeometryTests.swift */; };
 		5E0CA4EFDD5969AB9D94C337 /* MultiLineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2479686F1108528CDAF55A4 /* MultiLineString.swift */; };
 		5E12FBE11E5BBA9F571D7A36 /* LineString+CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F801D4FBC568C1C89DFB2 /* LineString+CodableTests.swift */; };
@@ -244,14 +243,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38057CEC66DA09D1A2EA09A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5428D1B1309205C451665B43 /* geos in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FADED1C6482FF398B8601CCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,7 +453,6 @@
 			buildConfigurationList = 5EE2B69FB1A1454A99CF834A /* Build configuration list for PBXNativeTarget "GEOSwift" */;
 			buildPhases = (
 				5AC151BB1FDB9E86DF90AF23 /* Sources */,
-				38057CEC66DA09D1A2EA09A5 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -470,7 +460,6 @@
 			);
 			name = GEOSwift;
 			packageProductDependencies = (
-				36CE224DD3CA4E9421683E73 /* geos */,
 			);
 			productName = GEOSwift;
 			productReference = C1E452E265FA37A0DAD4F21C /* GEOSwift.framework */;
@@ -516,9 +505,6 @@
 			);
 			mainGroup = 4650E838DE81B888614C9DDB;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				88781CD242A9AE562CF5A20F /* XCRemoteSwiftPackageReference "geos" */,
-			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
@@ -908,25 +894,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		88781CD242A9AE562CF5A20F /* XCRemoteSwiftPackageReference "geos" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/erdituncalp/geos.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		36CE224DD3CA4E9421683E73 /* geos */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 88781CD242A9AE562CF5A20F /* XCRemoteSwiftPackageReference "geos" */;
-			productName = geos;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A17F399F040484EEC4362C14 /* Project object */;
 }
