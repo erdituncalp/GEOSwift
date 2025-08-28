@@ -8,7 +8,7 @@ options:
     watchOS: "5.0"
 
 targets:
-  GEOSwift_iOS:
+  GEOSwift:
     type: framework
     platform: iOS
     sources:
@@ -20,36 +20,18 @@ targets:
       MARKETING_VERSION: 11.2.0
       CURRENT_PROJECT_VERSION: 1
       BUILD_LIBRARY_FOR_DISTRIBUTION: true
-
-  GEOSwift_macOS:
-    type: framework
-    platform: macOS
-    sources:
-      - Sources/GEOSwift
-    dependencies:
-      - package: geos
-    settings:
-      PRODUCT_BUNDLE_IDENTIFIER: com.geoswift.GEOSwift
-      MARKETING_VERSION: 11.2.0
-      CURRENT_PROJECT_VERSION: 1
+      GENERATE_INFOPLIST_FILE: true
+      CODE_SIGNING_REQUIRED: false
+      CODE_SIGN_IDENTITY: ""
       SUPPORTS_MACCATALYST: true
-      BUILD_LIBRARY_FOR_DISTRIBUTION: true
 
-  GEOSwiftTests_iOS:
+  GEOSwiftTests:
     type: bundle.unit-test
     platform: iOS
     sources:
       - Tests/GEOSwiftTests
     dependencies:
-      - target: GEOSwift_iOS
-
-  GEOSwiftTests_macOS:
-    type: bundle.unit-test
-    platform: macOS
-    sources:
-      - Tests/GEOSwiftTests
-    dependencies:
-      - target: GEOSwift_macOS
+      - target: GEOSwift
 
 packages:
   geos:
@@ -60,11 +42,6 @@ schemes:
   GEOSwift:
     build:
       targets:
-        GEOSwift_iOS: [build]
-        GEOSwift_macOS: [build]
-    test:
-      targets:
-        - name: GEOSwiftTests_iOS
-          parallelizable: true
-        - name: GEOSwiftTests_macOS
-          parallelizable: true
+        GEOSwift: [build, run, archive]
+    archive:
+      config: Release

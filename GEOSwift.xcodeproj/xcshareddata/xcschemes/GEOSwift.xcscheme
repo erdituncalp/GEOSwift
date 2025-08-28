@@ -9,29 +9,15 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "NO"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForArchiving = "YES"
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C6BEBACEA96A5BCAA2F34AF"
-               BuildableName = "GEOSwift_iOS.framework"
-               BlueprintName = "GEOSwift_iOS"
-               ReferencedContainer = "container:GEOSwift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE59CC40B132A4D40B29500A"
-               BuildableName = "GEOSwift_macOS.framework"
-               BlueprintName = "GEOSwift_macOS"
+               BlueprintIdentifier = "02CD38360FE6AD433E751126"
+               BuildableName = "GEOSwift.framework"
+               BlueprintName = "GEOSwift"
                ReferencedContainer = "container:GEOSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,38 +32,14 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9449BF91C93158AFE08867D"
-            BuildableName = "GEOSwiftTests_iOS.xctest"
-            BlueprintName = "GEOSwiftTests_iOS"
+            BlueprintIdentifier = "02CD38360FE6AD433E751126"
+            BuildableName = "GEOSwift.framework"
+            BlueprintName = "GEOSwift"
             ReferencedContainer = "container:GEOSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9449BF91C93158AFE08867D"
-               BuildableName = "GEOSwiftTests_iOS.xctest"
-               BlueprintName = "GEOSwiftTests_iOS"
-               ReferencedContainer = "container:GEOSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F76EBCED11A64653C5774040"
-               BuildableName = "GEOSwiftTests_macOS.xctest"
-               BlueprintName = "GEOSwiftTests_macOS"
-               ReferencedContainer = "container:GEOSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -92,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C6BEBACEA96A5BCAA2F34AF"
-            BuildableName = "GEOSwift_iOS.framework"
-            BlueprintName = "GEOSwift_iOS"
+            BlueprintIdentifier = "02CD38360FE6AD433E751126"
+            BuildableName = "GEOSwift.framework"
+            BlueprintName = "GEOSwift"
             ReferencedContainer = "container:GEOSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -108,9 +70,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6C6BEBACEA96A5BCAA2F34AF"
-            BuildableName = "GEOSwift_iOS.framework"
-            BlueprintName = "GEOSwift_iOS"
+            BlueprintIdentifier = "02CD38360FE6AD433E751126"
+            BuildableName = "GEOSwift.framework"
+            BlueprintName = "GEOSwift"
             ReferencedContainer = "container:GEOSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
